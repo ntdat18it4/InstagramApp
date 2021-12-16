@@ -40,4 +40,5 @@
     <string name="FRAGMENT_PROFILE_BTN_EDIT_PROFILE">Edit Profile</string>
     <string name="FRAGMENT_PROFILE_LBL_FULL_NAME">Full Name</string>
     <string name="FRAGMENT_PROFILE_LBL_BIO">Bio</string>
+
 </resources>

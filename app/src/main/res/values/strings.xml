@@ -5,4 +5,39 @@
     <string name="SPLASH_SCREEN_APP_TITLE">Instagram Clone App</string>
     <string name="SPLASH_SCREEN_POWER_BY">Power By</string>
     <string name="SPLASH_SCREEN_LBL_DESMOND">Thanh Dat</string>
+
+    <!--Fragment Home-->
+    <string name="FRAGMENT_HOME_EMPTY_POST_MSG">You don\'t have any post yet. \nStart upload your picture.</string>
+
+    <!--Fragment Search-->
+    <string name="FRAGMENT_SEARCH_TXT_SEARCH">Search&#8230;&#8230;</string>
+    <string name="FRAGMENT_SEARCH_TXT_EMPTY_RESULT_TITLE">Oops&#8230; Result not found</string>
+    <string name="FRAGMENT_SEARCH_TXT_EMPTY_RESULT_MESSAGE">The person you\'re looking for does not seem to exist.</string>
+    <string name="FRAGMENT_SEARCH_TXT_EMPTY_SEARCH_MESSAGE">Please search any username you\'re looking for inside the search bar.</string>
+
+    <!--Fragment Notifications-->
+    <string name="FRAGMENT_NOTIFICATION_TITLE">Notifications</string>
+    <string name="FRAGMENT_NOTIFICATION_MSG">You don\'t have any notification yet.</string>
+
+    <!--Activity Sign In-->
+    <string name="ACTIVITY_SING_IN_IMG_CONTENT">null</string>
+    <string name="ACTIVITY_SING_IN_TXT_EMAIL">Email</string>
+    <string name="ACTIVITY_SING_IN_TXT_PASSWORD">Password</string>
+    <string name="ACTIVITY_SING_IN_BTN_LOGIN">Login</string>
+    <string name="ACTIVITY_SING_IN_BTN_NEW_ACC">Need New Account? Sign Up</string>
+    <string name="ACTIVITY_SIGN_IN_INVALID_EMAIL">Invalid Email Format!</string>
+    <string name="ACTIVITY_SIGN_IN_LOADING_VIEW_TITLE">Please wait, while we are signing in for you, this may take a while&#8230;</string>
+
+
+    <!--Fragment Profile-->
+    <string name="FRAGMENT_PROFILE_LBL_USERNAME">username</string>
+    <string name="FRAGMENT_PROFILE_LBL_TOTAL_POST_TITLE">Posts</string>
+    <string name="FRAGMENT_PROFILE_LBL_TOTAL_POST_VALUE">0</string>
+    <string name="FRAGMENT_PROFILE_LBL_TOTAL_FOLLOWER_TITLE">Followers</string>
+    <string name="FRAGMENT_PROFILE_LBL_TOTAL_FOLLOWER_VALUE">0</string>
+    <string name="FRAGMENT_PROFILE_LBL_TOTAL_FOLLOWING_TITLE">Following</string>
+    <string name="FRAGMENT_PROFILE_LBL_TOTAL_FOLLOWING_VALUE">0</string>
+    <string name="FRAGMENT_PROFILE_BTN_EDIT_PROFILE">Edit Profile</string>
+    <string name="FRAGMENT_PROFILE_LBL_FULL_NAME">Full Name</string>
+    <string name="FRAGMENT_PROFILE_LBL_BIO">Bio</string>
 </resources>

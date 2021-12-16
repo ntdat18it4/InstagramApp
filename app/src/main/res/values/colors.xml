@@ -7,4 +7,12 @@
     <color name="colorBlue">#5552FF</color>
     <color name="blackColor">#ff000000</color>
     <color name="grayColor">#757575</color>
+
+    <color name="gray_scale">#8affffff</color>
+    <color name="progress_max_active">@color/white</color>
+    <color name="progress_primary">@color/white</color>
+    <color name="progress_secondary">@color/gray_scale</color>
+    <color name="white">#fff</color>
+    <declare-styleable name="StoriesProgressView"><attr format="integer|reference" name="progressCount"/></declare-styleable>
+    <dimen name="progress_bar_height">2dp</dimen>
 </resources>

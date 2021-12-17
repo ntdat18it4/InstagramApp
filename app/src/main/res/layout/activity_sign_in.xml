@@ -86,15 +86,15 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/password_login_Container"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
         android:layout_marginTop="25dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rounded_corner_black"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
         android:text="@string/ACTIVITY_SING_IN_BTN_LOGIN"
         android:textAllCaps="false"
-        android:background="@drawable/rounded_corner_black"
         android:textColor="@android:color/white"
-        android:textSize="17sp"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"/>
+        android:textSize="17sp" />
 
     <View
         android:id="@+id/button_divider"

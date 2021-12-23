@@ -52,4 +52,7 @@
     <string name="FRAGMENT_PROFILE_LBL_FULL_NAME">Full Name</string>
     <string name="FRAGMENT_PROFILE_LBL_BIO">Bio</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>

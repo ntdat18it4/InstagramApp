@@ -23,14 +23,25 @@ class SplashScreenActivity : AppCompatActivity() {
         lblPowerBy.startAnimation(myAnim)
         lblDesmond.startAnimation(myAnim)
 
-        handler = Handler()
-        handler.postDelayed({
+        val signInIntent = Intent(this, SignInActivity::class.java)
 
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
-
-        }, 5000)
-
+        val timer = object : Thread()
+        {
+            override fun run()
+            {
+                try
+                {
+                    sleep(3000)
+                } catch (e: InterruptedException)
+                {
+                    e.printStackTrace()
+                } finally
+                {
+                    startActivity(signInIntent)
+                    finish()
+                }
+            }
+        }
+        timer.start()
     }
 }

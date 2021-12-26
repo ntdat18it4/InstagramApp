@@ -109,17 +109,17 @@
         android:id="@+id/signup_link_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/password_login_Container"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="10dp"
-        android:layout_marginTop="25dp"
-        android:background="@android:color/transparent"
         android:layout_toEndOf="@+id/button_divider"
-        android:layout_below="@+id/password_login_Container"
+        android:background="@android:color/transparent"
         android:text="@string/ACTIVITY_SING_IN_BTN_NEW_ACC"
         android:textAllCaps="false"
         android:textColor="@android:color/darker_gray"
-        android:textSize="13sp"/>
+        android:textSize="13sp" />
 
 
 </RelativeLayout>

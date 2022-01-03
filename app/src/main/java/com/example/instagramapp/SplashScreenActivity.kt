@@ -2,14 +2,13 @@ package com.example.instagramapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
 import android.view.animation.AnimationUtils
 import androidx.appcompat.app.AppCompatActivity
+import com.example.instagramcloneapp.SignInActivity
 import kotlinx.android.synthetic.main.activity_splash_screen.*
 
 class SplashScreenActivity : AppCompatActivity() {
 
-    lateinit var handler: Handler
 
     override fun onCreate(savedInstanceState: Bundle?)
     {
@@ -24,6 +23,7 @@ class SplashScreenActivity : AppCompatActivity() {
         lblDesmond.startAnimation(myAnim)
 
         val signInIntent = Intent(this, SignInActivity::class.java)
+
 
         val timer = object : Thread()
         {

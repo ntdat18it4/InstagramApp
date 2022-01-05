@@ -38,7 +38,7 @@ class SignUpActivity : AppCompatActivity()
         signup_btn.setOnClickListener {
             enableComponents(false)
             startLoadingView(true)
-            //createAccount()
+            createAccount()
         }
 
         layout_sign_up_relative.setOnTouchListener { _, _ ->
@@ -262,5 +262,51 @@ class SignUpActivity : AppCompatActivity()
         )
     }
 
+    private fun createAccount()
+    {
+        val fullName = fullname_signup.text.toString()
+        val userName = username_signup.text.toString()
+        val email = email_signup.text.toString()
+        val password = password_signup.text.toString()
 
+
+
+        when
+        {
+            TextUtils.isEmpty(fullName) -> Toast.makeText(this, "Full Name is required.", Toast.LENGTH_LONG).show()
+            TextUtils.isEmpty(userName) -> Toast.makeText(this, "User Name is required.", Toast.LENGTH_LONG).show()
+            TextUtils.isEmpty(email) -> Toast.makeText(this, "Email is required.", Toast.LENGTH_LONG).show()
+            TextUtils.isEmpty(password) -> Toast.makeText(this, "Password is required.", Toast.LENGTH_LONG).show()
+
+            else ->
+            {
+                /*val progressDialog = ProgressDialog(this)
+                progressDialog.setTitle("Sign Up")
+                progressDialog.setMessage("Please wait, this may take a while...")
+                progressDialog.setCanceledOnTouchOutside(false)
+                progressDialog.show()*/
+
+                if(inputcheck(fullName,userName, email, password)){
+
+                    val user = UserModel(0, fullName, userName, email, password)
+                    userViewModel.addUser(user)
+                    Toast.makeText(this, "Ok", Toast.LENGTH_LONG).show()
+
+                    val intent = Intent(this, MainActivity::class.java)
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
+                    startActivity(intent)
+                    finish()
+
+                }else{
+                    Toast.makeText(this, "Fails", Toast.LENGTH_LONG).show()
+                }
+            }
+        }
+
+    }
+
+    private fun inputcheck(fullName:String, userName:String, email:String, password:String): Boolean {
+        return !(TextUtils.isEmpty(fullName) && TextUtils.isEmpty(userName) && TextUtils.isEmpty(email) &&
+        TextUtils.isEmpty(password))
+    }
 }

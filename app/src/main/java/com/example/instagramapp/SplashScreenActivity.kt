@@ -23,7 +23,6 @@ class SplashScreenActivity : AppCompatActivity() {
 
         val signInIntent = Intent(this, SignInActivity::class.java)
 
-
         val timer = object : Thread()
         {
             override fun run()
